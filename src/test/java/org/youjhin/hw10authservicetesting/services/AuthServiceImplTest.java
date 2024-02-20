@@ -89,7 +89,7 @@ public class AuthServiceImplTest {
 
         // Проверка вызова: метод deleteByUserId репозитория сессий должен быть вызван один раз
         verify(sessionRepository, times(1)).deleteByUserId(anyLong());
-        // Проверка: контекст безопасности должен быть очищен (в тестовой среде может потребоваться дополнительная настройка)
+        // Проверка: контекст безопасности должен быть очищен
         assertNull(SecurityContextHolder.getContext().getAuthentication());
     }
 
