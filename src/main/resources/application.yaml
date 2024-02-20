@@ -1,0 +1,12 @@
+#db related settings
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/gb-spring
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
